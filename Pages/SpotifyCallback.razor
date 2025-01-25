@@ -1,0 +1,26 @@
+@page "/callback"
+@inject SpotifyAuthService SpotifyAuthService
+@inject NavigationManager Navigation
+
+<h3>Authenticating...</h3>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        var query = Navigation.Uri.Split("?").Last();
+        var parameters = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(query);
+
+        if (parameters.TryGetValue("code", out var code))
+        {
+            var accessToken = await SpotifyAuthService.GetAccessToken(code);
+            Console.WriteLine($"ACCESS TOKEN: {accessToken}");
+
+            Navigation.NavigateTo("/home");
+        }
+        else
+        {
+            Console.WriteLine("Error while authenticating, redirecting back to /login");
+            Navigation.NavigateTo("/login");
+        }
+    }
+}

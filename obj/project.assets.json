@@ -783,19 +783,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\joann\\.nuget\\packages\\": {}
+    "/Users/wienio/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\joann\\Spotly\\Spotly.csproj",
+      "projectUniqueName": "/Users/wienio/Spotly/Spotly.csproj",
       "projectName": "Spotly",
-      "projectPath": "C:\\Users\\joann\\Spotly\\Spotly.csproj",
-      "packagesPath": "C:\\Users\\joann\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\joann\\Spotly\\obj\\",
+      "projectPath": "/Users/wienio/Spotly/Spotly.csproj",
+      "packagesPath": "/Users/wienio/.nuget/packages/",
+      "outputPath": "/Users/wienio/Spotly/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\joann\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/wienio/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -850,15 +850,11 @@
             "version": "[6.0.35, 6.0.35]"
           },
           {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "name": "Microsoft.NETCore.App.Host.osx-arm64",
             "version": "[6.0.35, 6.0.35]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[6.0.35, 6.0.35]"
-          },
-          {
-            "name": "Microsoft.WindowsDesktop.App.Ref",
             "version": "[6.0.35, 6.0.35]"
           }
         ],
@@ -870,7 +866,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.403/RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -93,4 +93,20 @@ public class SpotifyApiService : ISpotifyApiService
 
         await PostToSpotifyApi<JsonElement>(url, accessToken, body);
     }
+
+    public async Task<string> CreatePlaylistByPrompt(string name, string description, string prompt, string accessToken, string userId)
+    {
+        var trackUris = await SearchTracksByPrompt(prompt, accessToken);
+
+        if (!trackUris.Any())
+        {
+            throw new Exception("No tracks matching the prompt were found");
+        }
+
+        var playlistId = await CreatePlaylist(userId, name, description, true, accessToken);
+
+        await AddTracksToPlaylist(playlistId, trackUris, accessToken);
+
+        return playlistId;
+    }
 }

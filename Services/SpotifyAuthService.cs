@@ -19,8 +19,8 @@ public class SpotifyAuthService : ISpotifyAuthService
     public string GetAuthorizationUrl()
     {
         var clientId = _configuration["Spotify:ClientId"];
-        var redirectUri = _configuration["RedirectUri"];
-        var scopes = "playlist-modify-public play-list-modify-private user-top-read";
+        var redirectUri = _configuration["Spotify:RedirectUri"];
+        var scopes = "playlist-modify-public playlist-modify-private user-top-read";
 
         return $"https://accounts.spotify.com/authorize?client_id={clientId}&response_type=code&redirect_uri={redirectUri}&scope={scopes}";
     }

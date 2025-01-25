@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "VzE4TkjQZkaz/OPxZUnoWmsLbYgxIJbQyckHfQvBAYc=",
+  "Hash": "PyGlcsUqMfcaoD/UlNno6ibAVxi/Y75cds8UI8eGvps=",
   "Source": "Spotly",
   "BasePath": "_content/Spotly",
   "Mode": "Default",
@@ -300,6 +300,44 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/wienio/Spotly/wwwroot/images/logo.png",
+      "SourceId": "Spotly",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/wienio/Spotly/wwwroot/",
+      "BasePath": "_content/Spotly",
+      "RelativePath": "images/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/images/logo.png"
+    },
+    {
+      "Identity": "/Users/wienio/Spotly/wwwroot/styles.css",
+      "SourceId": "Spotly",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/wienio/Spotly/wwwroot/",
+      "BasePath": "_content/Spotly",
+      "RelativePath": "styles.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/styles.css"
     }
   ]
 }

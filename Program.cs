@@ -4,19 +4,24 @@ using Spotly.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services.AddHttpsRedirection(options =>
+{
+    options.HttpsPort = 5001;
+});
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
+builder.Services.AddHttpClient<SpotifyApiService>();
+builder.Services.AddHttpClient<SpotifyAuthService>();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("/Error");
 }
 
+app.UseHttpsRedirection();
 
 app.UseStaticFiles();
 

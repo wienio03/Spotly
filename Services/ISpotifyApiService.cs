@@ -7,9 +7,10 @@ using System.Threading.Tasks;
 public interface ISpotifyApiService
 {
     Task<string> GetUserId(string accessToken);
+
     Task<IEnumerable<string>> GetUserTopTracks(string accessToken);
     Task<IEnumerable<string>> SearchTracksByPrompt(string prompt, string accessToken);
-
     Task<string> CreatePlaylist(string userId, string name, string description, bool isPublic, string accessToken);
     Task AddTracksToPlaylist(string playlistId, IEnumerable<string> trackUris, string accessToken);
+    Task<string> CreatePlaylistByPrompt(string name, string description, string prompt, string accessToken, string userId);
 }
