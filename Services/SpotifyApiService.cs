@@ -66,7 +66,7 @@ public class SpotifyApiService : ISpotifyApiService
             .Where(uri => !string.IsNullOrEmpty(uri));
     }
 
-    public async Task<string> CreatePlaylist(string userId, string name, string description, bool isPublic)
+    public async Task<string> CreatePlaylist(string userId, string name, string description, bool isPublic, string accessToken)
     {
         var url = $"https://api.spotify.com/v1/users/{userId}/playlists";
         var body = new
@@ -75,6 +75,22 @@ public class SpotifyApiService : ISpotifyApiService
             description = description,
             @public = isPublic
         };
+
+        var response = await PostToSpotifyApi<JsonElement>(url, accessToken, body);
+
+        return response.GetProperty("id").GetString() ?? throw new Exception("Error while creating a playlist");
+
     }
 
+    public async Task AddTracksToPlaylist(string playlistId, IEnumerable<string> trackUris, string accessToken)
+    {
+        var url = $"https://api.spotify.com/v1/playlists/{playlistId}/tracks";
+
+        var body = new Dictionary<string, object>
+    {
+        { "uris", trackUris.ToArray() }
+    };
+
+        await PostToSpotifyApi<JsonElement>(url, accessToken, body);
+    }
 }
