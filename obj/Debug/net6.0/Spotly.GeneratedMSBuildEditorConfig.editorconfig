@@ -9,59 +9,55 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Spotly
 build_property.RootNamespace = Spotly
-build_property.ProjectDir = /Users/wienio/Spotly/
+build_property.ProjectDir = C:\Users\joann\Spotly\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/wienio/Spotly
+build_property.MSBuildProjectDirectory = C:\Users\joann\Spotly
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/wienio/Spotly/App.razor]
+[C:/Users/joann/Spotly/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/wienio/Spotly/Pages/GeneratePlaylist.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvR2VuZXJhdGVQbGF5bGlzdC5yYXpvcg==
+[C:/Users/joann/Spotly/Pages/GeneratePlaylist.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2VuZXJhdGVQbGF5bGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/wienio/Spotly/Pages/Home.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSG9tZS5yYXpvcg==
+[C:/Users/joann/Spotly/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/wienio/Spotly/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+[C:/Users/joann/Spotly/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/wienio/Spotly/Pages/Login.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvTG9naW4ucmF6b3I=
+[C:/Users/joann/Spotly/Pages/SpotifyCallback.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU3BvdGlmeUNhbGxiYWNrLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/wienio/Spotly/Pages/SpotifyCallback.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvU3BvdGlmeUNhbGxiYWNrLnJhem9y
+[C:/Users/joann/Spotly/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/wienio/Spotly/Shared/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/wienio/Spotly/_Imports.razor]
+[C:/Users/joann/Spotly/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/wienio/Spotly/Shared/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-62uztnaqu1
+[C:/Users/joann/Spotly/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-yjsq85lk98
 
-[/Users/wienio/Spotly/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+[C:/Users/joann/Spotly/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/wienio/Spotly/Pages/_Host.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
+[C:/Users/joann/Spotly/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/wienio/Spotly/Pages/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0xheW91dC5jc2h0bWw=
+[C:/Users/joann/Spotly/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "PyGlcsUqMfcaoD/UlNno6ibAVxi/Y75cds8UI8eGvps=",
+  "Hash": "Ic9zOx4eUKVFX92iit/6nyQSnB6GJczRl2TW2GX1QIQ=",
   "Source": "Spotly",
   "BasePath": "_content/Spotly",
   "Mode": "Default",
@@ -8,19 +8,19 @@
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [
     {
-      "Name": "Spotly/wwwroot",
+      "Name": "Spotly\\wwwroot",
       "Source": "Spotly",
-      "ContentRoot": "/Users/wienio/Spotly/wwwroot/",
+      "ContentRoot": "C:\\Users\\joann\\Spotly\\wwwroot\\",
       "BasePath": "_content/Spotly",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/Users/wienio/Spotly/obj/Debug/net6.0/scopedcss/bundle/Spotly.styles.css",
+      "Identity": "C:\\Users\\joann\\Spotly\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Spotly.styles.css",
       "SourceId": "Spotly",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/wienio/Spotly/obj/Debug/net6.0/scopedcss/bundle/",
+      "ContentRoot": "C:\\Users\\joann\\Spotly\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/Spotly",
       "RelativePath": "Spotly.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/wienio/Spotly/obj/Debug/net6.0/scopedcss/bundle/Spotly.styles.css"
+      "OriginalItemSpec": "C:\\Users\\joann\\Spotly\\obj\\Debug\\net6.0\\scopedcss\\bundle\\Spotly.styles.css"
     },
     {
-      "Identity": "/Users/wienio/Spotly/obj/Debug/net6.0/scopedcss/projectbundle/Spotly.bundle.scp.css",
+      "Identity": "C:\\Users\\joann\\Spotly\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Spotly.bundle.scp.css",
       "SourceId": "Spotly",
       "SourceType": "Computed",
-      "ContentRoot": "/Users/wienio/Spotly/obj/Debug/net6.0/scopedcss/projectbundle/",
+      "ContentRoot": "C:\\Users\\joann\\Spotly\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/Spotly",
       "RelativePath": "Spotly.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "/Users/wienio/Spotly/obj/Debug/net6.0/scopedcss/projectbundle/Spotly.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\joann\\Spotly\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\Spotly.bundle.scp.css"
     },
     {
-      "Identity": "/Users/wienio/Spotly/wwwroot/css/bootstrap/bootstrap.min.css",
+      "Identity": "C:\\Users\\joann\\Spotly\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "Spotly",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/wienio/Spotly/wwwroot/",
+      "ContentRoot": "C:\\Users\\joann\\Spotly\\wwwroot\\",
       "BasePath": "_content/Spotly",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -71,13 +71,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css"
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "/Users/wienio/Spotly/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "Identity": "C:\\Users\\joann\\Spotly\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "Spotly",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/wienio/Spotly/wwwroot/",
+      "ContentRoot": "C:\\Users\\joann\\Spotly\\wwwroot\\",
       "BasePath": "_content/Spotly",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -90,13 +90,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css.map"
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "/Users/wienio/Spotly/wwwroot/css/open-iconic/FONT-LICENSE",
+      "Identity": "C:\\Users\\joann\\Spotly\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "Spotly",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/wienio/Spotly/wwwroot/",
+      "ContentRoot": "C:\\Users\\joann\\Spotly\\wwwroot\\",
       "BasePath": "_content/Spotly",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -109,13 +109,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/open-iconic/FONT-LICENSE"
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "/Users/wienio/Spotly/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\joann\\Spotly\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "Spotly",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/wienio/Spotly/wwwroot/",
+      "ContentRoot": "C:\\Users\\joann\\Spotly\\wwwroot\\",
       "BasePath": "_content/Spotly",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -128,13 +128,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "/Users/wienio/Spotly/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+      "Identity": "C:\\Users\\joann\\Spotly\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "Spotly",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/wienio/Spotly/wwwroot/",
+      "ContentRoot": "C:\\Users\\joann\\Spotly\\wwwroot\\",
       "BasePath": "_content/Spotly",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -147,13 +147,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.eot"
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "/Users/wienio/Spotly/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "Identity": "C:\\Users\\joann\\Spotly\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "Spotly",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/wienio/Spotly/wwwroot/",
+      "ContentRoot": "C:\\Users\\joann\\Spotly\\wwwroot\\",
       "BasePath": "_content/Spotly",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -166,13 +166,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.otf"
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "/Users/wienio/Spotly/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "Identity": "C:\\Users\\joann\\Spotly\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "Spotly",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/wienio/Spotly/wwwroot/",
+      "ContentRoot": "C:\\Users\\joann\\Spotly\\wwwroot\\",
       "BasePath": "_content/Spotly",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -185,13 +185,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.svg"
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "/Users/wienio/Spotly/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+      "Identity": "C:\\Users\\joann\\Spotly\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "Spotly",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/wienio/Spotly/wwwroot/",
+      "ContentRoot": "C:\\Users\\joann\\Spotly\\wwwroot\\",
       "BasePath": "_content/Spotly",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -204,13 +204,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.ttf"
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "/Users/wienio/Spotly/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+      "Identity": "C:\\Users\\joann\\Spotly\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "Spotly",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/wienio/Spotly/wwwroot/",
+      "ContentRoot": "C:\\Users\\joann\\Spotly\\wwwroot\\",
       "BasePath": "_content/Spotly",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -223,13 +223,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/open-iconic/font/fonts/open-iconic.woff"
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "/Users/wienio/Spotly/wwwroot/css/open-iconic/ICON-LICENSE",
+      "Identity": "C:\\Users\\joann\\Spotly\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "Spotly",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/wienio/Spotly/wwwroot/",
+      "ContentRoot": "C:\\Users\\joann\\Spotly\\wwwroot\\",
       "BasePath": "_content/Spotly",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -242,13 +242,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/open-iconic/ICON-LICENSE"
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "/Users/wienio/Spotly/wwwroot/css/open-iconic/README.md",
+      "Identity": "C:\\Users\\joann\\Spotly\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "Spotly",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/wienio/Spotly/wwwroot/",
+      "ContentRoot": "C:\\Users\\joann\\Spotly\\wwwroot\\",
       "BasePath": "_content/Spotly",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -261,13 +261,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/open-iconic/README.md"
+      "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "/Users/wienio/Spotly/wwwroot/css/site.css",
+      "Identity": "C:\\Users\\joann\\Spotly\\wwwroot\\css\\site.css",
       "SourceId": "Spotly",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/wienio/Spotly/wwwroot/",
+      "ContentRoot": "C:\\Users\\joann\\Spotly\\wwwroot\\",
       "BasePath": "_content/Spotly",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -280,13 +280,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/site.css"
+      "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "/Users/wienio/Spotly/wwwroot/favicon.ico",
+      "Identity": "C:\\Users\\joann\\Spotly\\wwwroot\\favicon.ico",
       "SourceId": "Spotly",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/wienio/Spotly/wwwroot/",
+      "ContentRoot": "C:\\Users\\joann\\Spotly\\wwwroot\\",
       "BasePath": "_content/Spotly",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -299,13 +299,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/favicon.ico"
+      "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "/Users/wienio/Spotly/wwwroot/images/logo.png",
+      "Identity": "C:\\Users\\joann\\Spotly\\wwwroot\\images\\logo.png",
       "SourceId": "Spotly",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/wienio/Spotly/wwwroot/",
+      "ContentRoot": "C:\\Users\\joann\\Spotly\\wwwroot\\",
       "BasePath": "_content/Spotly",
       "RelativePath": "images/logo.png",
       "AssetKind": "All",
@@ -318,13 +318,13 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/images/logo.png"
+      "OriginalItemSpec": "wwwroot\\images\\logo.png"
     },
     {
-      "Identity": "/Users/wienio/Spotly/wwwroot/styles.css",
+      "Identity": "C:\\Users\\joann\\Spotly\\wwwroot\\styles.css",
       "SourceId": "Spotly",
       "SourceType": "Discovered",
-      "ContentRoot": "/Users/wienio/Spotly/wwwroot/",
+      "ContentRoot": "C:\\Users\\joann\\Spotly\\wwwroot\\",
       "BasePath": "_content/Spotly",
       "RelativePath": "styles.css",
       "AssetKind": "All",
@@ -337,7 +337,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/styles.css"
+      "OriginalItemSpec": "wwwroot\\styles.css"
     }
   ]
 }

@@ -1,8 +1,12 @@
 ﻿@inherits LayoutComponentBase
+@inject NavigationManager Navigation
 
 <div class="container">
-    <NavMenu />
     <div class="content">
+        @if (!Navigation.Uri.EndsWith("/"))
+        {
+            <NavMenu />
+        }
         @Body
     </div>
 </div>

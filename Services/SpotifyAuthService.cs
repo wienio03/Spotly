@@ -3,6 +3,7 @@ using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
+using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 using System.Collections.Generic;
 
 public class SpotifyAuthService : ISpotifyAuthService
@@ -10,6 +11,7 @@ public class SpotifyAuthService : ISpotifyAuthService
     private readonly HttpClient _httpClient;
     private readonly IConfiguration _configuration;
 
+    private string _accessToken = "";
     public SpotifyAuthService(HttpClient httpClient, IConfiguration configuration)
     {
         _httpClient = httpClient;
@@ -45,9 +47,14 @@ public class SpotifyAuthService : ISpotifyAuthService
         response.EnsureSuccessStatusCode();
 
         var responseString = await response.Content.ReadAsStringAsync();
-
         var jsonResponse = JsonSerializer.Deserialize<JsonElement>(responseString);
 
-        return jsonResponse.GetProperty("access_token").GetString() ?? "Access token is null";
+        _accessToken = jsonResponse.GetProperty("access_token").GetString() ?? throw new Exception("Access token is null");
+
+        Console.WriteLine($"ACCESS TOKEN: {_accessToken}");
+
+        return _accessToken;
     }
+
+
 }

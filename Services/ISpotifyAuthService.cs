@@ -6,5 +6,6 @@ using System.Threading.Tasks;
 public interface ISpotifyAuthService
 {
     Task<string> GetAccessToken(string code);
+
     string GetAuthorizationUrl();
 }

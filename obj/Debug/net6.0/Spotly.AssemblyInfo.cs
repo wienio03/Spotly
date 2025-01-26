@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Spotly")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1dc4c92122909e4215a49476c992a109d3c5c8f7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3d086ebe7bef35f1d13e894a71266d693aff536")]
 [assembly: System.Reflection.AssemblyProductAttribute("Spotly")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Spotly")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
