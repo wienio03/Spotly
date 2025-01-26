@@ -12,34 +12,21 @@
 </div>
 
 @code {
-    private bool hasRendered = false;
-
     protected override async Task OnInitializedAsync()
     {
-        await Task.Delay(2000); // Simulate delay
-
         var query = Navigation.Uri.Split("?").Last();
         var parameters = Microsoft.AspNetCore.WebUtilities.QueryHelpers.ParseQuery(query);
 
         if (parameters.TryGetValue("code", out var code))
         {
-            await SpotifyAuthService.GetAccessToken(code);
-            StateHasChanged(); // Force UI update
+            var accessToken = await SpotifyAuthService.GetAccessToken(code);
+
+            Navigation.NavigateTo("/home");
         }
         else
         {
-            Console.WriteLine("Error while authenticating, redirecting back to /login");
-            Navigation.NavigateTo("/login");
-        }
-    }
-
-    protected override async Task OnAfterRenderAsync(bool firstRender)
-    {
-        if (firstRender && !hasRendered)
-        {
-            hasRendered = true;
-            await SpotifyAuthService.OnAfterRenderAsync();
-            Navigation.NavigateTo("/home");
+            Console.WriteLine("Error while authenticating, redirecting back to login page");
+            Navigation.NavigateTo("/");
         }
     }
 }

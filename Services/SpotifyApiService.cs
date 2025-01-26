@@ -20,6 +20,7 @@ public class SpotifyApiService : ISpotifyApiService
     {
         _httpClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
         var responseString = await _httpClient.GetStringAsync(url);
+        Console.WriteLine(responseString);
         return JsonSerializer.Deserialize<T>(responseString, new JsonSerializerOptions { PropertyNameCaseInsensitive = true }) ?? throw new Exception("Error during GET from Spotify API");
     }
 
@@ -46,7 +47,7 @@ public class SpotifyApiService : ISpotifyApiService
 
     public async Task<IEnumerable<TrackModel>> GetUserTopTracks(string accessToken)
     {
-        var url = "https://api.spotify.com/v1/me/top/tracks?limit=10";
+        var url = "https://api.spotify.com/v1/me/top/tracks?time_range=long_term&limit=15";
         var response = await GetFromSpotifyApi<JsonElement>(url, accessToken);
 
         return response.GetProperty("items")
@@ -54,26 +55,30 @@ public class SpotifyApiService : ISpotifyApiService
             .Select(track => new TrackModel
             {
                 Name = track.GetProperty("name").GetString() ?? string.Empty,
-                Uri = track.GetProperty("name").GetString() ?? string.Empty,
-                ImageUri = track.GetProperty("album").GetProperty("images").EnumerateArray().FirstOrDefault().GetProperty("url").GetString() ?? string.Empty
+                Uri = track.GetProperty("uri").GetString() ?? string.Empty,
+                ImageUri = track.GetProperty("album").GetProperty("images").EnumerateArray().FirstOrDefault().GetProperty("url").GetString() ?? string.Empty,
+                ArtistName = track.GetProperty("artists")[0].GetProperty("name").GetString() ?? string.Empty,
             }
             ).Where(t => !string.IsNullOrEmpty(t.Name));
     }
 
-    public async Task<IEnumerable<TrackModel>> SearchTracksByPrompt(string prompt, string accessToken)
+    public async Task<IEnumerable<TrackModel>> SearchTracksByPrompt(string prompt, string accessToken, int offset)
     {
-        var url = $"https://api.spotify.com/v1/search?q={Uri.EscapeDataString(prompt)}&type=track&limit=15";
+        var url = $"https://api.spotify.com/v1/search?q={Uri.EscapeDataString(prompt)}&type=track&limit=15&offset={offset}";
         var response = await GetFromSpotifyApi<JsonElement>(url, accessToken);
 
-        return response.GetProperty("items")
+        return response.GetProperty("tracks")
+            .GetProperty("items")
             .EnumerateArray()
+
             .Select(track => new TrackModel
             {
                 Name = track.GetProperty("name").GetString() ?? string.Empty,
-                Uri = track.GetProperty("name").GetString() ?? string.Empty,
-                ImageUri = track.GetProperty("album").GetProperty("images").EnumerateArray().FirstOrDefault().GetProperty("url").GetString() ?? string.Empty
+                Uri = track.GetProperty("uri").GetString() ?? string.Empty,
+                ImageUri = track.GetProperty("album").GetProperty("images").EnumerateArray().FirstOrDefault().GetProperty("url").GetString() ?? string.Empty,
+                ArtistName = track.GetProperty("artists")[0].GetProperty("name").GetString() ?? string.Empty,
             }
-            ).Where(t => !string.IsNullOrEmpty(t.Name));
+            ).Where(t => !string.IsNullOrEmpty(t.Name) && !t.Name.Contains(prompt));
     }
 
     public async Task<string> CreatePlaylist(string userId, string name, string description, bool isPublic, string accessToken)
@@ -97,15 +102,19 @@ public class SpotifyApiService : ISpotifyApiService
         var url = $"https://api.spotify.com/v1/playlists/{playlistId}/tracks";
 
         var body = new Dictionary<string, object>
-    {
-        { "uris", trackUris.ToArray() }
-    };
+        {
+            { "uris", trackUris.ToArray() },
+            { "position", 0 }
+        };
+
+        var jsonBody = JsonSerializer.Serialize(body);
+        Console.WriteLine(jsonBody);
 
         await PostToSpotifyApi<JsonElement>(url, accessToken, body);
     }
-    public async Task<string> CreatePlaylistByPrompt(string name, string description, string prompt, string accessToken, string userId)
+    public async Task<string> CreatePlaylistByPrompt(string name, string description, string prompt, string accessToken, string userId, int offset)
     {
-        var tracks = await SearchTracksByPrompt(prompt, accessToken);
+        var tracks = await SearchTracksByPrompt(prompt, accessToken, offset);
         var trackUris = tracks.Select(t => t.Uri);
 
         if (!trackUris.Any())
@@ -116,6 +125,6 @@ public class SpotifyApiService : ISpotifyApiService
         var playlistId = await CreatePlaylist(userId, name, description, true, accessToken);
         await AddTracksToPlaylist(playlistId, trackUris, accessToken);
 
-        return playlistId;
+        return $"https://open.spotify.com/playlist/{playlistId}";
     }
 }

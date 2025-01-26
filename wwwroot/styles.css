@@ -2,3 +2,23 @@
     width: 100px;
     height: 100px;
 }
+
+.spotify-green-bg {
+    background: #1db954;
+}
+
+.spotify-green-bg:hover {
+    background-color: #1db000;
+}
+
+.spotify-green-text {
+    color: #1db954;
+}
+
+.artist-name {
+    font-weight: bold
+}
+
+.top-content {
+    margin-top: 10px;
+}

@@ -1,5 +1,8 @@
 ﻿@inherits LayoutComponentBase
-<nav class="navbar navbar-expand-lg fixed-top bg-light w-100 shadow d-flex align-items-start">
+@inject NavigationManager Navigation
+@inject SpotifyAuthService SpotifyAuthService
+
+<nav class="navbar navbar-expand-lg fixed-top w-100 shadow-sm d-flex align-items-start nav-bg">
     <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -7,19 +10,76 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <NavLink class="nav-link" href="/home">Home</NavLink>
+                    <NavLink class="nav-link" href="/home" Match="NavLinkMatch.All">Home</NavLink>
                 </li>
                 <li class="nav-item">
-                    <NavLink class="nav-link" href="/generate-playlist">Generate Playlist</NavLink>
+                    <NavLink class="nav-link" href="/generate-playlist" Match="NavLinkMatch.Prefix">Generate Playlist
+                    </NavLink>
                 </li>
                 <li class="nav-item">
-                    <NavLink class="nav-link" href="/top-tracks">Your Top Tracks</NavLink>
-                </li>
-                <li class="nav-item">
+                    <NavLink class="nav-link" href="/top-tracks" Match="NavLinkMatch.Prefix">Your Top Tracks</NavLink>
                 </li>
             </ul>
-        </div>
-        <div>
+            <div class="ms-3">
+                <button class="btn btn-outline-danger logout-btn" @onclick="Logout">Logout</button>
+            </div>
         </div>
     </div>
 </nav>
+
+<style>
+    .nav-bg {
+        background: #fafafa;
+    }
+
+    .nav-link {
+        position: relative;
+        padding-bottom: 5px;
+        font-weight: 500;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .nav-link.active {
+        color: #1DB954;
+    }
+
+    .nav-link.active::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        bottom: -3px;
+        width: 0;
+        height: 3px;
+        background-color: #1db954;
+        transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+    }
+
+    .nav-link.active:hover::after {
+        width: 100%;
+        left: 0;
+    }
+
+    .nav-link:hover {
+        color: #1db954;
+    }
+
+    .logout-btn {
+        font-weight: 500;
+        padding: 8px 15px;
+        border-radius: 5px;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .logout-btn:hover {
+        background-color: #dc3545;
+        color: white;
+    }
+</style>
+
+@code {
+    private void Logout()
+    {
+        SpotifyAuthService.Logout();
+        Navigation.NavigateTo("/", forceLoad: true);
+    }
+}

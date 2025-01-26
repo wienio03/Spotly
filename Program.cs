@@ -1,6 +1,5 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
-using Microsoft.AspNetCore.Components.Server.ProtectedBrowserStorage;
 using Spotly.Data;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,10 +10,10 @@ builder.Services.AddHttpsRedirection(options =>
 });
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
-builder.Services.AddHttpClient();
+builder.Services.AddHttpClient<SpotifyAuthService>();
+builder.Services.AddHttpClient<SpotifyAuthService>();
 builder.Services.AddSingleton<SpotifyApiService>();
-builder.Services.AddScoped<SpotifyAuthService>();
-builder.Services.AddScoped<ProtectedLocalStorage>();
+builder.Services.AddSingleton<SpotifyAuthService>();
 
 var app = builder.Build();
 
